@@ -4,4 +4,11 @@
 
 img{
   width: 100%;
+  
+}
+.crate {
+  display: flex;
+}
+.item{
+  flex: 1;
 }
