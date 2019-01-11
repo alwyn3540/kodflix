@@ -40,7 +40,7 @@ class App extends Component {
           </div>
           <div className='item'>
             <img src={tvPoster6} alt='rights free poster' />
-              Out of this World
+              Out of This World
 
             
             
