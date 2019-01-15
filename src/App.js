@@ -12,38 +12,48 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <br />
-        <br />
-        <br />
+        <br /><br /><br />
         <div className='crate'>
           <div className='item'>
             <img src={tvPoster1} alt='old film poster' />
-            sideswiped
+            <div className='overlay'>
+              <h3>sideswiped</h3>
+            </div>
           </div>
           <div className='item'>
             <img src={tvPoster2} alt=' rights free poster' />
-            Women on The Verge
+            <div className='overlay'>
+              <h3>Women on The Verge</h3>
+            </div>
           </div>
           <div className='item'>
             <img src={tvPoster3} alt='rights free poster' />
-            The Tracey Morgan Show
+            <div className='overlay'>
+              <h3>The Tracey Morgan Show</h3></div>
           </div>
         </div>
         <div className='crate'>
           <div className='item'>
             <img src={tvPoster4} alt='rights free poster' />
-            The Men who Built America
+            <div className='overlay'>
+              <h3>The Men who Built America</h3>
+            </div>
           </div>
           <div className='item'>
             <img src={tvPoster5} alt='rights free poster' />
-            Atlanta
+            <div className= 'overlay'>
+             <h3>Atlanta</h3>
+          </div>
           </div>
           <div className='item'>
             <img src={tvPoster6} alt='rights free poster' />
-              Out of This World
+            <div className='overlay'>
+            <h3>Out of This World</h3>
+            </div>
+        
 
-            
-            
+
+
           </div>
         </div>
       </div>
