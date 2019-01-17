@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TVShow    from './TVShow';
 import tvPoster1 from './images/tvposter1.jpeg';
 import tvPoster2 from './images/tvposter2.jpeg';
 import tvPoster3 from './images/tvposter3.jpeg';
@@ -14,51 +15,23 @@ class App extends Component {
       <div className="App">
         <br /><br /><br />
         <div className='crate'>
-          <div className='item'>
-            <img src={tvPoster1} alt='old film poster' />
-            <div className='overlay'>
-              <h3>sideswiped</h3>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={tvPoster2} alt=' rights free poster' />
-            <div className='overlay'>
-              <h3>Women on The Verge</h3>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={tvPoster3} alt='rights free poster' />
-            <div className='overlay'>
-              <h3>The Tracey Morgan Show</h3></div>
-          </div>
+          <TVShow name='sideswiped' image={tvPoster1} />
+          <TVShow name='Women on The Verge' image={tvPoster2} />
+          <TVShow name='The Tracey Morgan Show' image={tvPoster3} />
         </div>
         <div className='crate'>
-          <div className='item'>
-            <img src={tvPoster4} alt='rights free poster' />
-            <div className='overlay'>
-              <h3>The Men who Built America</h3>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={tvPoster5} alt='rights free poster' />
-            <div className= 'overlay'>
-             <h3>Atlanta</h3>
-          </div>
-          </div>
-          <div className='item'>
-            <img src={tvPoster6} alt='rights free poster' />
-            <div className='overlay'>
-            <h3>Out of This World</h3>
-            </div>
-        
+          <TVShow name='The Men who Built America' image={tvPoster4} />
+          <TVShow name='Atlanta' image={tvPoster5} />
+          <TVShow name='Out of This World' image={tvPoster6} />
 
-
-
-          </div>
         </div>
+
       </div>
     );
   }
 }
+
+
+
 
 export default App;
