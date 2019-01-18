@@ -18,13 +18,13 @@ img{
 }
 
 .overlay {
-   transition: bottom ease 1.3s;
+   transition: bottom ease 0.5s;
    position: absolute;
    bottom: -100px;
    left: 0;
    width: 100%;
    opacity: 0.6;
-   background-color: lemonchiffon; 
+   background-color:gold;
    
 }
 

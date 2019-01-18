@@ -10,7 +10,6 @@ import tvPoster6 from './images/tvposter6.jpeg';
 
 
 
-
 export default function Gallery() {
   return (
     <div>
@@ -20,11 +19,11 @@ export default function Gallery() {
         <TVShow name='The Tracey Morgan Show' image={tvPoster3} />
       </div>
       <div className='crate'>
-  <TVShow name='The Men who Built America' image={tvPoster4}/>
-  <TVShow name='Atlanta' image={tvPoster5} />
-      <TVShow name='Out of This World' image={tvPoster6} />
+        <TVShow name='The Men who Built America' image={tvPoster4}/>
+        <TVShow name='Atlanta' image={tvPoster5} />
+        <TVShow name='Out of This World' image={tvPoster6} />
     </div>
-</div >
+  </div>
 
   );
 }
