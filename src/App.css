@@ -7,10 +7,14 @@ img{
   
 }
 .crate {
-  display: flex;
+  /*display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .item{
-  flex: 1;
+  /*flex: 1;
+  flex-basis: 150px; */
   padding:30px;
   border: 1px solid darkred;
   position: relative;
@@ -29,14 +33,9 @@ img{
 }
 
 .item:hover .overlay {
-  display: block;
   opacity: 0.8;
   bottom: 30px;
 }
 
-@media only screen and (max-width: 500px) {
- 
-  .crate {
-    flex-direction:column ; 
-  }
-}
+
+
