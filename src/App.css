@@ -38,7 +38,7 @@ img{
 
 .item:hover .overlay {
   opacity: 0.8;
-  bottom: 30px;
+  bottom:  4px;
 }
 
 
