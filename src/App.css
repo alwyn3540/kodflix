@@ -4,7 +4,8 @@
 
 body, html {
 
-  background:black 
+  background:black;
+  color:gold;
 }
 img{
   width: 100%;
