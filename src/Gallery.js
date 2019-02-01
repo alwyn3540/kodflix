@@ -2,6 +2,7 @@ import React from 'react';
 import TVShow from './TVShow';
 import newGallery from './newGallery.js';
 
+
 export default function Gallery() {
   return (
     <div>
