@@ -1,29 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link , Redirect} from 'react-router-dom';
+import newGallery from './newGallery';
 
 export default class Details extends React.Component{
 
     constructor() {
         super();
         this.state = {
-            detailsPage: 'Hello, this will be the details page for each Movie & TV show '    
-            };
-        }
-
+             showDetails: {}
+        };
+    }
         componentDidMount() {
-            setTimeout (() => {
-                this.setState ( {
-                    detailsPage:'Great TV shows on Kodflix!'
-                });
-            }, 2000);
-        }
+           let showId = this.props.match.params.showId;
+           let showDetails = newGallery()
+           .find((showDetails) => showDetails.id === showId);        
+       this.setState ({
+            showDetails
+       });
+        
+   }
+           
+        
+
     render () {
+        if(this.state.showDetails === undefined) {
+            return <Redirect to='/not-found' />
+        } else 
         return (
             <div>
-                <h4>{this.state.detailsPage}</h4>
+                <h4>{this.state.showDetails.name}</h4>
                 <Link to='/'>Back to Home Page</Link>
             </div>
+    
         );
     }
 }
