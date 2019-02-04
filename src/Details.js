@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , Redirect} from 'react-router-dom';
 import newGallery from './newGallery';
 
 export default class Details extends React.Component{
@@ -23,6 +23,9 @@ export default class Details extends React.Component{
         
 
     render () {
+        if(this.state.showDetails === undefined) {
+            return <Redirect to='/not-found' />
+        } else 
         return (
             <div>
                 <h4>{this.state.showDetails.name}</h4>
