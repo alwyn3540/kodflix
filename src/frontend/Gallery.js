@@ -1,6 +1,6 @@
 import React from 'react';
 import TVShow from './TVShow';
-import newGallery from './newGallery.js';
+import newGallery from './newGallery';
 
 
 export default function Gallery() {
